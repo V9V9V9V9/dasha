@@ -34,8 +34,6 @@ else
 			task.wait()
 		until game:IsLoaded()
 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
-
 		local chatService, players = game:GetService("Chat"), game:GetService("Players")
 
 		local custom_chars = {
@@ -88,6 +86,13 @@ else
 		end)
 
 		local bypassing = true
+
+		local c = function()
+			for i = 1, 2 do
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e can can can can can can can can can can can can can can can can can can can can can can ", "All")
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e can can can can can can can can can can can can can can can can can can can can can can ", "All")
+			end
+		end
 
 		local TextButton = Instance.new("TextButton")
 		local UICorner = Instance.new("UICorner")
